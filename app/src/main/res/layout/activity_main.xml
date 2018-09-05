@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/textviewtitle"
+       android:textAllCaps="true"
+       android:textColor="#f20"
+       android:layout_centerHorizontal="true"
+       android:textSize="@dimen/_25ssp"
+       android:text="Đếm khoảng cách ngày"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+    <EditText
+        android:textSize="@dimen/_20ssp"
+        android:hint="Nhập ngày thứ 1"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@id/textviewtitle"
+        android:id="@+id/edittextNgaythu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="@dimen/_20ssp"
+        android:hint="Nhập ngày thứ 2"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@id/edittextNgaythu1"
+        android:id="@+id/edittextNgaythu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonTinhngay"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_below="@id/edittextNgaythu2"
+        android:layout_centerHorizontal="true"
+        android:text="Tính ngày"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/textviewKetqua"
+        android:textColor="#405dcf"
+        android:layout_below="@id/buttonTinhngay"
+        android:textSize="@dimen/_30ssp"
+        android:text="18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
